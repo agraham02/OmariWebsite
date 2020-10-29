@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Upper Nav */
+.top-nav {
+    /* background-color: dodgerblue; */
+    background-image: linear-gradient(to bottom right, rgb(69, 171, 218), rgb(197, 223, 240), rgb(224, 194, 61));
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+#home-btn {
+    color: rgb(15, 126, 83);
+    margin-left: 20px;
+}
+
+#search-bar {
+    max-width: 50%;
+    height: 50%;
+    font-size: 1.3em;
+    flex-grow: 1;
+    margin: 70px;
+}
+
+.top-nav .links a{
+    color: rgb(15, 126, 83);
+    margin: 20px;
+}
+/* Banner */
+header {
+    height: 100%;
+}
+
+#banner {
+    padding-top: 70px;
+    height: 100%;
+
+    background-image: url("../images/fred-kearney-rmxlMmbgQAk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    /* position: relative; */
+    margin: auto;
+}
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+header .text {
+    color: #f2f2f2;
+    font-size: 3rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    position: relative;
+    bottom: 60px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Header */
+/* header img {
+    width: 100%;
+    height: 100%;
+} */
+
+/* Middle Nav */
+.link-buttons {
+    padding: 5% 0;
+}
+
+.link-buttons a {
+    width: 80%;
+    font-size: 5rem;
+    display: block;
+    padding: 5% 0;
+    color: white;
+    text-align: center;
+    margin: 2% auto;
+    border-radius: 20px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#film {
+    background-image: url("../images/creeper.jpg");
+}
+
+#commercials {
+    background-image: url("../images/Shoe.jpg");
+}
+
+#photography {
+    background-image: url("../images/Photographer.jpg");
+}
+
+#film:hover {
+    background-image: none;
+    background-color: blue;
+}
+
+#commercials:hover {
+    background-image: none;
+    background-color: red;
+}
+
+#photography:hover {
+    background-image: none;
+    background-color: green;
+}
+
+/* Blog Posts */
+.blog-posts {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+
+.col {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.blog-posts h1 {
+    margin-bottom: 5px;
+}
+.blog-posts .text{
+    max-width: 80%;
+    margin: 1% auto 7%;
+    text-align: right;
+    line-height: 1.2;
+}
+
+.blog-posts .text h1, .blog-posts .text p {
+    text-align: center;
+}
+
+#read-more {
+    display: inline-block;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 3em 4em;
+    height: auto;
+    color: white;
+    background-color: rgb(0, 119, 190);
+    color: rgb(219, 207, 168);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.1em;
+}
+
+footer p {
+    margin: 0 0 15px;
+}
+
+footer a {
+    display: block;
+    margin: 0 0 15px;
+    color: rgb(219, 207, 168);
+    text-decoration: underline;
+}
+
+footer .container{
+    padding: 0 2em;
+} 
+
+@media only screen and (orientation: portrait), (max-width: 768px) {
+    .blog-posts {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .col {
+        margin: 20px;
+    }
+
+    .top-nav .links a{
+        display: none;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .link-buttons a {
+        padding: 20px;
+        font-size: 4rem;
+    }
+}
