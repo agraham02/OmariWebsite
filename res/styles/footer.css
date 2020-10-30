@@ -1,0 +1,34 @@
+footer {
+    padding: 3em 4em;
+    height: auto;
+    color: white;
+    background-color: rgb(39, 84, 168);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.1em;
+}
+
+footer p {
+    margin: 0 0 15px;
+}
+
+footer a {
+    display: block;
+    margin: 0 0 15px;
+    color: rgb(219, 207, 168);
+    text-decoration: underline;
+}
+
+footer .container{
+    padding: 0 2em;
+}
+
+footer .icons a {
+    display: inline;
+}
+
+footer .icons {
+    margin: 15px 0;
+}

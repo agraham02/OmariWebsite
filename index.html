@@ -6,25 +6,41 @@
     <title>OmariG | Home</title>
     <link rel="stylesheet" href="./res/styles/index.css">
     <link rel="stylesheet" href="./res/styles/nav.css">
+    <link rel="stylesheet" href="./res/styles/footer.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav class="top-nav">
         <a href="./index.html" id="home-btn">Omari G.</a>
-        <input id="search-bar" type="text" placeholder="Search...">
+        <!-- <input id="search-bar" type="text" placeholder="Search..."> -->       
+
         <div class="links">
-            <div class="container" onclick="triggerAnimation(this)">
+            <div id="btn-Nav-Menu" class="container">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-            <!-- <a href="#">Projects</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a> -->
-        </div>
+            <div class="land-links">                
+                <a href="#">Projects<i class="fa fa-caret-down"></i></a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>        
     </nav>
 
-    <header>        
+    <header>     
+        <div id="mySidenav" class="sidenav">
+            <button class="dropdown-btn">Projects
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Narrative</a>
+                <a href="#">Commercial</a>
+                <a href="#">Photography</a>
+            </div>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>  
         <div class="banner">
             
         </div>
@@ -172,10 +188,7 @@
         </div>
     </footer>
 
-    <script>
-        function triggerAnimation(x) {
-            x.classList.toggle("change");
-        }
+    <script src="./res/scripts/index.js">        
     </script>
 </body>
 </html>

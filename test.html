@@ -3,34 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./res/styles/test.css">
+    <title>OmariG | Home</title>
+    <link rel="stylesheet" href="./res/styles/index.css">
+    <link rel="stylesheet" href="./res/styles/nav.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav>
-        <a href="./index.html" id="home-btn">Home</a>
-        <input id="search-bar" type="text" placeholder="Search...">
+    <nav class="top-nav">
+        <a href="./index.html" id="home-btn">Omari G.</a>
+        <!-- <input id="search-bar" type="text" placeholder="Search..."> -->        
+
         <div class="links">
+            <div id="btn-Nav-Menu" class="container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="land-links">
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        
+    </nav>
+
+    <header>     
+        <div id="my-sidenav" class="sidenav">
             <a href="#">Projects</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
+        </div>   
+        <div class="banner">
+            
         </div>
-    </nav>
-
-    <header>        
-        <div id="banner" class="slideshow-container">
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <div class="text">Caption Text... more text, with more text</div>
-        </div>
-        <br>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    </header>    
+    </header>
     <main>   
         <div class="link-buttons">
             <a href="#" id="film">Film & TV</a>
@@ -155,10 +163,26 @@
         </div>
     </main>
     <footer>
-        <div class="contact-info">
+        <div class="left container">
             <p>example@email.com</p>
             <p>(123) 456-7890</p>
+            <p>THIS WEBSITE IS A REGISTERED TRADEMARK OF WEBSITE, LLC</p>
+            <div class="icons">
+                <a href="https://www.instagram.com/omarixg/?hl=en"><i class="fa fa-instagram fa-2x"></i></a>                
+                <i class="fa fa-pinterest fa-2x"></i>
+                <i class="fa fa-twitter fa-2x"></i>
+            </div>            
+        </div>
+        <div class="right container">
+            <nav>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
         </div>
     </footer>
+
+    <script src="./res/scripts/index.js">        
+    </script>
 </body>
 </html>
