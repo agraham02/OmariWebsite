@@ -18,43 +18,12 @@ a {
     text-decoration: none;
 }
 
-/* Upper Nav */
-.top-nav {
-    /* background-color: dodgerblue; */
-    background-image: linear-gradient(to bottom right, rgb(69, 171, 218), rgb(197, 223, 240), rgb(224, 194, 61));
-    height: 70px;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-}
-
-#home-btn {
-    color: rgb(15, 126, 83);
-    margin-left: 20px;
-}
-
-#search-bar {
-    max-width: 50%;
-    height: 50%;
-    font-size: 1.3em;
-    flex-grow: 1;
-    margin: 70px;
-}
-
-.top-nav .links a{
-    color: rgb(15, 126, 83);
-    margin: 20px;
-}
 /* Banner */
 header {
     height: 100%;
 }
 
-#banner {
-    padding-top: 70px;
+.banner {
     height: 100%;
 
     background-image: url("../images/fred-kearney-rmxlMmbgQAk-unsplash.jpg");
@@ -62,98 +31,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 100%;
-    /* position: relative; */
-    margin: auto;
-}
-  
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-  
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-  
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-  
-/* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-  
-/* Caption text */
-header .text {
-    color: #f2f2f2;
-    font-size: 3rem;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 60px;
-    width: 100%;
-    text-align: center;
-}
-  
-/* The dots/bullets/indicators */
-.dot {
-    position: relative;
-    bottom: 60px;
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-  
-.active, .dot:hover {
-    background-color: #717171;
-}
-  
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-  
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-  
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-/* Header */
-/* header img {
-    width: 100%;
-    height: 100%;
-} */
 
 /* Middle Nav */
 .link-buttons {
@@ -269,7 +146,15 @@ footer a {
 
 footer .container{
     padding: 0 2em;
-} 
+}
+
+footer .icons a {
+    display: inline;
+}
+
+footer .icons {
+    margin: 15px 0;
+}
 
 @media only screen and (orientation: portrait), (max-width: 768px) {
     .blog-posts {
