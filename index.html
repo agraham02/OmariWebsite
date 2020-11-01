@@ -22,29 +22,39 @@
             </div>
             <div class="land-links">                
                 <a href="#">Projects<i class="fa fa-caret-down"></i></a>
-                <a href="#">About</a>
+                <a href="./about.html">About</a>
                 <a href="#">Contact</a>
             </div>
         </div>        
     </nav>
+    <div id="mySidenav" class="sidenav">
+        <button class="dropdown-btn">Projects
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Narrative</a>
+            <a href="#">Commercial</a>
+            <a href="#">Photography</a>
+        </div>
+        <a href="./about.html">About</a>
+        <a href="#">Contact</a>
+    </div> 
 
-    <header>     
-        <div id="mySidenav" class="sidenav">
-            <button class="dropdown-btn">Projects
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">Narrative</a>
-                <a href="#">Commercial</a>
-                <a href="#">Photography</a>
-            </div>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </div>  
-        <div class="banner">
-            
+    <header id="slideshow" class="slideshow">
+        <div id="temp" class="text">Uno dos tres</div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center" class="dot-container">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
         </div>
     </header>
+    
+
     <main>   
         <div class="link-buttons">
             <a href="#" id="film">Film & TV</a>
@@ -188,7 +198,7 @@
         </div>
     </footer>
 
-    <script src="./res/scripts/index.js">        
-    </script>
+    <script src="./res/scripts/nav.js"></script>
+    <script src="./res/scripts/slideshow.js"></script>
 </body>
 </html>

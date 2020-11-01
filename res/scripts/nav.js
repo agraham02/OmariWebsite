@@ -27,12 +27,14 @@ function toggleNavMenu() {
         //sideNav.style.display = "inline";
         sideNav.style.width = "250px";
         menuIsOpen = true;
+        navMenu.style.position = "fixed";
     }
     else {
         /* Set the width of the sidebar to 0 (hide it) */
         //sideNav.style.display = "none";
         sideNav.style.width = "0";
         menuIsOpen = false;
+        navMenu.style.position = "static";
     }
 }
 

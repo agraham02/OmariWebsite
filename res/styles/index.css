@@ -18,18 +18,85 @@ a {
     text-decoration: none;
 }
 
-/* Banner */
-header {
-    height: 100%;
-}
-
-.banner {
+/* Slideshow */
+.slideshow {
     height: 100%;
 
-    background-image: url("../images/fred-kearney-rmxlMmbgQAk-unsplash.jpg");
+    /* background-image: url("../images/fred-kearney-rmxlMmbgQAk-unsplash.jpg");
+    background-image: url("../images/man-in-water.jpg"); */
+    background-image: url("../images/portrait.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slideshow .text {
+    color: #f2f2f2;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.dot-container {
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {    
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #616161;
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 /* Middle Nav */
@@ -62,21 +129,6 @@ header {
 
 #photography {
     background-image: url("../images/Photographer.jpg");
-}
-
-#film:hover {
-    background-image: none;
-    background-color: blue;
-}
-
-#commercials:hover {
-    background-image: none;
-    background-color: red;
-}
-
-#photography:hover {
-    background-image: none;
-    background-color: green;
 }
 
 /* Blog Posts */
@@ -118,6 +170,16 @@ header {
     display: inline-block;
     font-style: italic;
     margin-top: 10px;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 @media only screen and (orientation: portrait), (max-width: 768px) {

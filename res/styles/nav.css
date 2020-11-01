@@ -33,11 +33,13 @@
 
 /* Hamburger menu*/
 nav .container {
-    /* display: inline-block; */
+    display: none;
     cursor: pointer;
     margin-right: 20px;
-    display: none;
     z-index: 10;
+    /* position: fixed; */
+    right: 0%;
+    top: 1.4%;
 }
 
 .bar1, .bar2, .bar3 {
@@ -117,7 +119,7 @@ nav .container {
     padding-left: 8px;
 }
 
-.active {
+.sidenav .active {
     background-color: blue;
     color: white;
 }
