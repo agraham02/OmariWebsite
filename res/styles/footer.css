@@ -16,8 +16,7 @@ footer p {
 
 footer a {
     display: block;
-    margin: 0 0 15px;
-    color: rgb(219, 207, 168);
+    color: white;
     text-decoration: underline;
 }
 
@@ -31,4 +30,8 @@ footer .icons a {
 
 footer .icons {
     margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
 }

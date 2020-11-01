@@ -2,9 +2,9 @@ var banner = document.getElementById("slideshow");
 var slideIndex = 0;
 
 var slides = [
-    {image: "url('./res/images/portrait.jpg')", text: "Oh"}, 
-    {image: "url('./res/images/man-in-water.jpg')", text: "My"}, 
-    {image: "url('./res/images/fred-kearney-rmxlMmbgQAk-unsplash.jpg')", text: "Gosh"} 
+    {image: "url('./res/images/portrait.jpg')", text: "Sample Text 1"}, 
+    {image: "url('./res/images/man-in-water.jpg')", text: "Sample Text 2"}, 
+    {image: "url('./res/images/fred-kearney-rmxlMmbgQAk-unsplash.jpg')", text: "Sample Text 3"} 
 ]
 
 function plusSlides(n) {
